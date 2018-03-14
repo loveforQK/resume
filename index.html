@@ -1,1 +1,87 @@
-hello world
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>许亮亮的简历</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="myinfo-wrap"></div>
+<div class="myinfo">
+    <div class="head"></div>
+    <ul class="concat">
+        <li><span>姓名</span>许亮亮</li>
+        <li><span>星座</span>处女座</li>
+        <li><span>QQ</span>1148192194</li>
+        <li><span>Email</span><a href="mailto:1148192194@qq.com">1148192194@qq.com</a></li>
+    </ul>
+    <p>坚定执着是我的标签，不怕辛苦，怕的是无所事事，热爱运动，喜欢看推理悬疑小书，科幻电影也是我的最爱，喜欢做些虚无缥缈的梦。喜欢一个人，安静的世界。虽然生活总有起伏，但是这些才会使自己成长。即便身处黑暗中，我也会为自己点亮一盏灯。</p>
+</div>
+<div class="wrap">
+    <div class="panel panel-default">
+        <div class="panel-heading">擅长技能</div>
+        <div class="panel-body">
+            <ol>
+                <li>php、js、html、css等网页开发语言和技术</li>
+                <li>PHP框架Yii、ThinkPHP、CakePHP、Codeigniter、Swoole、Workerman</li>
+                <li>MySQL（数据持久存储）、memcache与redis（热点数据限定时间缓存）</li>
+                <li>Linux常用指令，LNMP环境部署配置</li>
+                <li>SVN、git版本控制工具配置与使用</li>
+                <li>JQuery、Bootstrap、AdminLTE、Highcharts等前端通用框架库</li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">项目历程</div>
+        <div class="panel-body">
+            <div class="timezone">
+                <div class="time">
+                    <i></i>
+                    <h2>至今</h2>
+                    <div class="box">
+                        <p>极光系统</p>
+                        类似CMS系统，除了普通数据维护，模板渲染生成页面，新增可视化拖拽模块，系统预定义了板块、颗粒元素，使用者可以拖拽元素到指定位置，设置元素风格与属性，自定义组合成页面发布对外，整个系统采用html与API方式结合开发。
+                    </div>
+                </div>
+                <div class="time">
+                    <i></i>
+                    <h2>2018-03</h2>
+                    <div class="box">
+                        <p>图文直播平台后台改版</p>
+                        主要用于发布图片文字内容，使用Yii2基础版框架，基于bootstrap组件快速重构，更加直观展示频道、主题、广告位、在线人数、图片内容之间的关联关系，优化了操作体验，以弹窗形式添加编辑模型字段，减少页面之间切换跳转。
+                    </div>
+                </div>
+                <div class="time">
+                    <i></i>
+                    <h2>2018-02</h2>
+                    <div class="box">
+                        <p>官网活动平台后台改版</p>
+                        主要是游戏官网各类专题玩家参与数据展示与导出，整站采用静态HTML与API结合方式开发，界面更加简洁易于操作。API使用PHP自行封装框架（包含路由解析、控制器、数据库PDO、数据表模型等模块），HTML界面基于bootstrap框架开发，通过布局页面初始加载所需的通用数据源（列如账户管理权限、游戏列表等），各模块页面通过异步加载，没有URL地址跳转切换，减少通用css、js资源反复加载，通用数据源一次加载反复使用。其次通过界面配置不同专题数据表显示字段、查询条件、数据添加的时间字段，从而使不同字段不同结构的数据表，能够以统一标准格式展现，同时可以按照数据添加的时间字段，借助图表插件按月展示线状图，部分固定值字段可以以饼状图展示比例，更加直观的展现各类专题玩家参与趋势。
+                    </div>
+                </div>
+                <div class="time">
+                    <i></i>
+                    <h2>2018-01</h2>
+                    <div class="box">
+                        <p>STONE玩啥平台开发</p>
+                        类似CMS系统，后台（基于Yii2框架开发）负责维护游戏、评测、攻略、广告素材等模块数据，结合自定义模板渲染生成首页、游戏详情页面、评测详情页面、攻略详情页面，同步外网服务器对外发布。
+                    </div>
+                </div>
+                <div class="time">
+                    <i></i>
+                    <h2>2017-9</h2>
+                    <div class="box">
+                        <p>艺术中心素材管理平台</p>
+                        素材管理平台，包含psd、max等游戏原画素材，后台基于Yii2框架开发，前台基于html与API方式开发，主要有用户管理、工作室管理、游戏管理、素材上传、权限设置。素材文件都比较大（1G左右），上传之前通过js对选中文件分片（每片50M），逐个上传同时展示上传进度，服务端创建临时目录（按照用户ID创建，避免冲突），保存每个切片，上传结束最后合并所有切片，再复制到指定的素材目录中，结束之后清理临时目录。下载文件时候，服务端需要先按照地址读取文件，避免一次读取过大的文件占用服务器资源，采用循环分批读取的方式，每次只读取指定长度的文件内容，输出到客户端，再继续读取下一批次文件内容输出，直至到达文件末尾。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/pixi.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
