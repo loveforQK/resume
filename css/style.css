@@ -1,7 +1,7 @@
-@font-face{font-family: xull;src:url('../font/4.ttf')}
-body{margin:0;padding:0;background: url("../img/bg.jpg");font-family:xull;font-size:20px;}
+body{margin:0;padding:0;background: url("../img/bg.jpg");font-size:16px;}
 canvas{display: block;position: fixed;z-index:-1;}
 ul,ul li{list-style: none;padding:0;margin:0;}
+.panel{opacity:0.9;}
 li{padding:5px 0;}
 .myinfo-wrap,.myinfo{width:300px;height: 100vh;position: fixed;top:0;left:0;color:#333;}
 .myinfo-wrap{background:#fff;opacity: 0.5;}
